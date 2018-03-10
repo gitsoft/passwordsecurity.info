@@ -87,7 +87,7 @@ window.setInterval(function(){
 function passwordmodified() {
   var modifiedpassword = passwordInput.value;
   if (modifiedpassword !== passwordplain) {
-    document.getElementById("iscompromised").innerHTML = '<span style="color: #ff9900;" class="c64pm px16"><img src="img/loading.gif" alt="" width="25" height="25" />&nbsp;We are checking if your password has ever been compromised...</span>';
+    document.getElementById("iscompromised").innerHTML = '<span style="color: #ff9900;" class="c64pm px16"><img src="img/loading.gif" alt="" width="25" height="25" />&nbsp;Checking if your password has ever been compromised...</span>';
   }
 }
 
