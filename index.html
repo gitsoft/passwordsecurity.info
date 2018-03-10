@@ -1,44 +1,41 @@
+<!DOCTYPE HTML>
+<html>
 <head>
-  
-  <title>Password Security info</title>
-
+  <title>Password checker</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-indigo.min.css" />
+  <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-indigo.min.css" /> -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-red.min.css" />
   <link rel="stylesheet" href="css/hsimp.css">
 
   <meta name="description" content="We help you create and finding good passwords and checking if they have already Been Compromised.">
   <meta name="keywords" content="password, security, how strong is my password, how secure is my password, create, good, passwords, have i been pwned, compromise, compromised, internet, privacy, test, lookup">
 
-  <meta property="og:title" content="PasswordSecurity.info" />
-  <meta property="og:description" content="We help you creating and finding good and unique passwords."/>
+  <meta property="og:title" content="passwordcheck.insoft.se" />
+  <meta property="og:description" content="Find uncompromized passwords."/>
   <meta property="og:site_name" content="Password Security info" />
-  <meta property="og:url" content="https://passwordsecurity.info/" />
+  <meta property="og:url" content="https://passwordcheck.insoft.se/" />
   <meta property="og:type" content="website" />
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:title" content="PasswordSecurity.info" />
-  <meta property="twitter:description" content="We help you creating and finding good and unique passwords." />
-  <meta property="twitter:creator" content="@technonerdz" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111957642-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25922648-10"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'UA-111957642-1');
+  gtag('config', 'UA-25922648-10');
 </script>
 
-</head>
 
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="topbar" style="text-align:center">
       <!-- Title -->
-      <span class="mdl-layout-title">PasswordSecurity.info</span>
+      <span class="mdl-layout-title c64pm px16">Test your password against 1 billion stolen passwords</span>
+
       <!-- Add spacer, to align navigation to the right -->
+      
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -47,29 +44,37 @@
   </header>
   <main class="mdl-layout__content">
     <div class="page-content">
-
-
       <body>
-          <h2 style="text-align: center;">Write your password in this box:</h2>
+          <h2 style="text-align: center; margin-top:40px;" class="c64pm px16">Write your password in this box:</h2>
           <p style="text-align: center;"><!--<label>Write your password in this box</label>-->
           <input id="password-box" type="password" onkeyup="passwordmodified()" /></p>
-          <p style="text-align: center;">It would take&nbsp;<strong id="password-time">0 seconds</strong> to crack your password</p>
-          <ul style="text-align: center;" class="hsimp-checks">
-            <h2 id="iscompromised"><span style="color: #339966;">This password was not compromised in any database breach!!</span></h2>
+          
+          <ul style="text-align: center;" class="hsimp-checks c64pm px16">
+            <h2 id="iscompromised"><span style="color: #339966;" class="c64pm px16"></span></h2>
           </ul>
-          <ul style="text-align: center;" id="password-checks" class="hsimp-checks"></ul>
+          <ul style="text-align: center; margin-top: 20px;" id="password-checks" class="hsimp-checks c64pm px16"></ul>
           <br />
           <br />
           <br />
-          <p style="text-align: center;">PasswordSecurity.info was created by <a href="https://twitter.com/technonerdz" target="_blank" rel="noopener">F&eacute;lix Giffard</a> using the How Secure Is My Password open source script and the <a href="https://haveibeenpwned.com" target="_blank" rel="noopener">Have I Been Pwned?</a> API.</p>
-          <p style="text-align: center;">We really don't want to know your password. Your password will not be sent to us. This website is 100% <a href="https://github.com/technonerdz/passwordsecurity.info" target="_blank" rel="noopener">open source on Github</a>.</p>
+          <div class="footer">
+          <p class="nfotext"></p>
+          </div>
+
+          <footer class="mdl-mini-footer" style="position:absolute; bottom:0; padding:0; width: 100%;text-align:center;">
+            <div class="mdl-mini-footer__left-section"></div>
+            <div class="mdl-mini-footer__middle-section">
+              <div class="mdl-logo"></div>
+                <div class="c64pm px16">
+                About this site: 100% <a href="https://github.com/gitsoft/passwordsecurity.info" target="_blank" rel="noopener">open source</a>. This site is a modified fork from <a href="https://github.com/technonerdz/passwordsecurity.info" target="_blank" rel="noopener">F&eacute;lix Giffard's repository on github</a>. Passwords are tested using the <a href="https://haveibeenpwned.com/API/v2" target="_blank" rel="noopener">haveibeenpwned API</a>.
+              </div>
+            </div>
+            <div class="mdl-mini-footer__right-section"></div>
+          </footer>          
 
           <script src="js/hsimp.min.js"></script>
           <script src="js/main.js"></script>
       </body>
-
-
-
     </div>
   </main>
 </div>
+</html>

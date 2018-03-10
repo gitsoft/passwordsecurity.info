@@ -50,3 +50,143 @@ div {
     font-size: 1em;
 }
 .hsimp-level{color:#fff;color:rgba(255,255,255,0.9);transition:background .5s linear;background-color:#fff}.hsimp-level--bad,.hsimp-level--insecure{background-color:#c63136}.hsimp-level--ok{background-color:#de7b46}.hsimp-level--good{background-color:#2f8249}
+
+.footer{
+    position: absolute;
+    align-content: center;
+    bottom: 0;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    
+}
+
+.nfotext{
+    margin: 0;
+    padding: 0;
+}
+
+.mdl-mini-footer {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.topbar {
+    background: url('../img/inverted_transparent_Logo_200w_padded.png') left / cover,url('../img/supermario.png') right / cover;
+    background-color: rgb(40, 40, 40);
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    -moz-text-align-last: center;
+  }
+.toppenmario{
+    background: ;
+    background-color: rgb(40, 40, 40);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    -moz-text-align-last: center;
+}  
+  .topbartitle{
+    display:block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+@font-face {
+    font-family: "C64 Pro Mono Local";
+    src: url("../fonts/C64_Pro_Mono-STYLE.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "C64 Pro Local";
+    src: url("../fonts/C64_Pro-STYLE.ttf") format("truetype");
+}
+
+
+.c64pm {
+   font: normal 24pt/32px "C64 Pro Mono Local", verdana, helvetica, sans-serif;
+   letter-spacing: 0px;
+   padding: 0;
+   margin: 0;
+}
+.c64p {
+   font: normal 24pt/32px "C64 Pro Local", verdana, helvetica, sans-serif;
+   letter-spacing: 0px;
+   padding: 0;
+   margin: 0;
+}
+.px8 {
+   font-size: 6pt;
+   line-height: 8px;
+}
+.px16 {
+   font-size: 12pt;
+   line-height: 16px;
+}
+.px24 {
+   font-size: 18pt;
+   line-height: 24px;
+}
+.px32 {
+   font-size: 24pt;
+   line-height: 32px;
+}
+.px40 {
+   font-size: 30pt;
+   line-height: 40px;
+}
+
+table, tr, td {
+   padding: 0;
+   margin: 0;
+}
+thead, tbody, tr, td {
+   background-color: inherit;
+}
+td {
+   font: inherit;
+   border-right: 2px solid #888;
+   border-bottom: 2px solid #888;
+}
+td:first-child {
+   border-left: 2px solid #888;
+}
+tr:first-child td {
+   border-top: 2px solid #888;
+}
+td:hover {
+   background-color: #000 !important;
+   color: #fff !important;
+}
+table {
+   border-top: 4px solid #000;
+   border-left: 4px solid #000;
+   border-right: 4px solid #000;
+   border-bottom: 4px solid #000;
+}
+
+.d020-00 {
+   background-color: #000000;
+}
+.d021-00 {
+   color: #000000;
+}
+.d020-06 {
+   background-color: #352879;
+}
+.d021-06 {
+   color: #352879;
+}
+.d020-0e {
+   background-color: #6C5EB5;
+}
+.d021-0e {
+   color: #6C5EB5;
+}
